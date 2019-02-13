@@ -1,9 +1,8 @@
 
-
-
 * {
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     min-height: 100vh;
@@ -16,30 +15,236 @@ body {
     flex-direction: column;
     flex: 5;
 }
+
 .inner-row {
     display: flex;
     flex-direction: row;
 }
+
 .inner-col {
     flex: 4;
 }
+
 .inner-row article {
     min-height: 60vh;
-}
-.inner-row aside {
-    background: beige;
-    flex: 1;
-}
- footer{
-    height: 20vh;
+    background-color: #f7f7f7;
 }
 
+.inner-row aside {
+    background-color: #ffffff;
+    flex: 1;
+}
+
+footer {
+    height: 20vh;
+}
 
 footer, article, nav, aside {
     padding: 1em;
 }
 
-.nav-abas{
+nav {
+    background-color: #3F7AF5 !important;
+
+}
+
+.nav-abas {
     background-color: #ffffff;
-    color: #717171;
+    color: #3F7AF5;
+}
+
+.tabs .tab a {
+    background-color: transparent;
+    color: #3958ee !important;
+
+}
+
+.tab a:hover {
+    color: #3958ee !important;
+}
+.tabs .indicator {
+    background-color: #3252f0 !important;
+}
+
+.icons-align{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho-feed{
+    margin-bottom: 20px;
+}
+
+.size-icon{
+    font-size: 1.4rem;
+}
+
+.subtitle-icon{
+    font-size: 0.8em;
+    text-transform:inherit;
+}
+
+.espaco-divisor{
+    margin-top: 20px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+}
+
+.subtitle-feed{
+    font-size: 0.7em;
+    text-transform: capitalize;
+}
+
+.subtitle-top-feed{
+    font-size: 0.8em;
+    text-transform: capitalize;
+    display: flex;
+}
+
+.textos-alerta{
+    margin-top: 20px;
+}
+
+.mensagem-feed{
+    font-size: 0.8em;
+    text-transform: capitalize;
+}
+
+.flex-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-content-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-content-chat{
+    display: flex;
+    align-items: center;
+}
+
+.card-chat{
+    display: block;
+    margin-left: 1.4em;
+}
+
+.flex-content-chat .itens{
+    padding-right: 0.2em;
+}
+
+li.tab {
+    flex-basis : 20.33%;
+  
+ }
+.logo{
+    width: 25px;
+    height: 25px;
+}
+
+.titulo-lista{
+    margin-top: 5em;
+}
+
+.header-lista{
+    height: 40px;
+    background: none!important;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.lista-conteudo{
+    background: #dce1ea;
+    height: 4em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em !important;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+
+.no-border{
+    border: none;
+}
+.hide{
+    display: none;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    margin-right: 0.2em;
+}
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.title-avatar {
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 0.9em;
+}
+
+.flex-content-avatar{
+    display: flex;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+
+.container  {
+    width: 100%;
+}
+
+.container img {
+    display:inline-block;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.barra-progressao{
+    display: flex;
+    height: 60px;
+}
+
+.espaco-icone, .espaco-texto{
+    padding-right:10px;
+}
+
+.progress-bar {
+    position: relative;
+    height: 4px;
+    display: block;
+    width: 100%;
+    background-color: #acece6;
+    border-radius: 2px;
+    margin: .3rem 0 1rem 0;
+    overflow: hidden;
+}
+
+.li-button {
+    padding: 0.5%;
+}
+
+.color-footer{
+    background-color: #f7f7f7;
+    font-size: 0.8em;
+}
+
+.icon-flex {
+    display: flex;
+}
+
+.label-size {
+    font-size: 20px;
+}
+
+.logo-text {
+    font-size: 0.4em;
+    color: #dce1ea;
+    font-weight: 200;
 }

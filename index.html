@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Compiled and minified JavaScript -->
 
@@ -18,71 +19,418 @@
     <title>Teste Template Flex</title>
 </head>
 
-<body>
-
 
 <body>
 <div class="outer-col-2">
     <header>
         <nav class="nav-extended">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Logo</a>
+                <div href="#" class="brand-logo">
+                    <a class="container"><img class="logo" src="assets/img/logo.png" alt="logo"><b class="logo-text">&nbsp;Dealer Messenger</b></a>
+
+                </div>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
+                    <li><a href="sass.html">CAMPAIGNS</a></li>
+                    <li><a href="badges.html">CUSTOMERS</a></li>
+                    <li><a href="collapsible.html">REPORTS</a></li>
+                    <li><a id="notification" href="#"><i
+                            class="white-text medium indigo-text material-icons">notifications</i></a></li>
+                    <li>
+                        <div class="flex-content-avatar">
+                            <div class="avatar">
+                                <img src="assets/img/eu.jpeg" alt="foto">
+                            </div>
+                            <p class="title-avatar">Raianne Fleury</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
+
         </nav>
-
-        <div class="nav-content nav-abas">
-            <ul class="tabs z-depth-1">
-                <li class="tab"><a href="#test1">Test 1</a></li>
-                <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-                <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
-                <li class="tab"><a href="#test4">Test 4</a></li>
-                <li class="right"><a class="btn waves-effect light-blue white-text darken-2"><i class="material-icons left">cloud</i>button</a></li>
-            </ul>
-
-
-            <div>
-
-            </div>
-        </div>
 
         <ul class="sidenav" id="mobile-demo">
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
             <li><a href="collapsible.html">JavaScript</a></li>
+            <li><a href="collapsible.html"><i class="white-text medium indigo-text material-icons">notifications</i></a>
+            </li>
+
         </ul>
-
-
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#test1">SENT CAMPAIGNS</a></li>
+                <li class="tab"><a href="#test2">DRAFTS</a></li>
+                <li class="tab"><a href="#test2">TEMPLATES</a></li>
+                <li class="right li-button"><a class="btn waves-effect blue darken-3 white-text btn-small">
+                    <i class="material-icons left">add_circle_outline</i>Create Campaign</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <div class="inner-row">
-        <div class="inner-col">
+        <div id="test1" class="inner-col">
             <article>
-                <div class="collection">
-                    <a href="#!" class="collection-item">Alvin</a>
-                    <a href="#!" class="collection-item active">Alvin</a>
-                    <a href="#!" class="collection-item">Alvin</a>
-                    <a href="#!" class="collection-item">Alvin</a>
+                <div class="container">
+                    <div class="titulo-lista">
+                        <label class="label-size">Latest Campaigns</label>
+                        <a class="dropdown-button subtitle-icon grey-text icon-flex right">
+                            Sort by: <p class="blue-text">&nbsp;Date</p><i
+                                class="tiny material-icons blue-text">keyboard_arrow_down</i>
+                        </a>
+                    </div>
+
+                    <ul class="collection no-border">
+                        <li class="collection-item header-lista grey-text">
+                            <div class="row flex-content">
+                                <div class="col-sm-5">
+                                    <img src="images/yuna.jpg" alt="" class="circle">
+                                    <span class="title">Campaign Title</span>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                    <p>recipients</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center">
+                                    <p>Opened</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center">
+                                    <p>CTA</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center">
+                                    <p>Responses</p>
+                                </div>
+                                <div class="col-sm-2 text-center">
+                                    <p>New Message</p>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <ul class="collection no-border">
+                        <li class="collection-item lista-conteudo">
+                            <div class="row flex-content">
+                                <div class="col-sm-5 blue-text">
+                                    <img src="images/yuna.jpg" alt="" class="circle">
+                                    <span class="title">Hyunday i40 Campaign</span>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                    <p>1.896</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>41%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>39%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>46%</p>
+                                </div>
+                                <div class="col-sm-2 text-center">
+                                    <p>0</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item lista-conteudo">
+                            <div class="row flex-content">
+                                <div class="col-sm-5 blue-text">
+                                    <img src="images/yuna.jpg" alt="" class="circle">
+                                    <span class="title">New Hyunday Tucson Campaign</span>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                    <p>1.896</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>41%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>39%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>46%</p>
+                                </div>
+                                <div class="col-sm-2 text-center">
+                                    <p class="btn-floating btn-small waves-effect waves-light blue">3</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item lista-conteudo">
+                            <div class="row flex-content">
+                                <div class="col-sm-5 blue-text">
+                                    <img src="images/yuna.jpg" alt="" class="circle">
+                                    <span class="title">Hyunday i40 Campaign</span>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                    <p>1.896</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>41%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>39%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>46%</p>
+                                </div>
+                                <div class="col-sm-2 text-center">
+                                    <p>0</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item lista-conteudo">
+                            <div class="row flex-content">
+                                <div class="col-sm-5 blue-text">
+                                    <img src="images/yuna.jpg" alt="" class="circle">
+                                    <span class="title">New Hyunday Tucson Campaign</span>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                    <p>1.896</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>41%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>39%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>46%</p>
+                                </div>
+                                <div class="col-sm-2 text-center">
+                                    <p class="btn-floating btn-small waves-effect waves-light blue">3</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item lista-conteudo">
+                            <div class="row flex-content">
+                                <div class="col-sm-5 blue-text">
+                                    <img src="images/yuna.jpg" alt="" class="circle">
+                                    <span class="title">New Hyunday Tucson Campaign</span>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                    <p>1.896</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>41%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>39%</p>
+                                </div>
+
+                                <div class="col-sm-1 text-center ">
+                                    <p>46%</p>
+                                </div>
+                                <div class="col-sm-2 text-center">
+                                    <p class="btn-floating btn-small waves-effect waves-light blue">3</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="flex-content right">
+                        <a href="#">
+                            <span class="subtitle-icon blue-text flex-content-chat">See all campaigns&nbsp;<i
+                                    class="tiny material-icons grey-text">arrow_forward</i></span>
+                        </a>
+                    </div>
+
                 </div>
 
             </article>
-            <footer>Footer</footer>
+            <footer class="page-footer color-footer">
+                <div class="container grey-text">
+                    <b>© 2014 Copyright Text</b>
+                    <p>Contact Suport • Dealer Messenger Academy
+                        <img class="logo right" src="assets/img/logo-footer.png" alt="logo">
+                    </p>
+
+                </div>
+            </footer>
         </div>
-        <aside>Aside</aside>
+        <aside id="aside">
+
+            <div class="feed-noticias">
+                <div class="cabecalho-feed">
+                    <h6 class="grey-text text-darken-1">Notifications Feed</h6>
+                    <span class="subtitle-icon grey-text">Use filters to see a specific type.</span>
+                    <i class="size-icon indigo-text material-icons right">search</i></a>
+
+                </div>
+
+                <div class="icons-align">
+                    <a class="waves-effect waves-light btn blue darken-4"><i
+                            class="tiny white-text material-icons">notifications_none</i></a>
+                    <a class="waves-effect waves-light btn grey lighten-5"><i
+                            class="tiny indigo-text material-icons">smartphone</i></a>
+                    <a class="waves-effect waves-light btn grey lighten-5"><i
+                            class="tiny indigo-text material-icons">chat</i></a>
+                    <a class="waves-effect waves-light btn grey lighten-5"><i
+                            class="tiny indigo-text material-icons">thumb_up</i></a>
+                </div>
+
+                <div class="espaco-divisor">
+
+                    <span class="grey-text">All notifications</span>
+
+                    <hr class="grey lighten-4">
+
+                </div>
+
+            </div>
+
+
+            <div class="chat">
+                    <span class="subtitle-top-feed grey-text"><i
+                            class="tiny material-icons grey-text">adjust</i>&nbsp;Today</span>
+
+                <div class="textos-alerta">
+                    <div class="flex-content-chat">
+                        <i class="tiny material-icons itens grey-text">chat</i>
+                        <span class="subtitle-feed blue-text text-darken-2 itens">Finibus Bonorum</span>
+                        <small>wrote</small>
+                    </div>
+                    <div class="card-chat">
+                        <div class="flex-content">
+                            <div class="">
+                                <span class="subtitle-feed grey-text text-darken-1">12 Jan 2019 at</span>
+                                <span class="subtitle-feed grey-text text-darken-1">09:00 AM</span>
+                            </div>
+
+                            <a href="#">
+                                    <span class="subtitle-feed blue-text text-darken-2 flex-content-chat">Replay<i
+                                            class="tiny material-icons grey-text">arrow_forward</i></span>
+                            </a>
+                        </div>
+                        <div class="card-panel grey lighten-5">
+                            <span class="mensagem-feed grey-text text-darken-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="chat">
+                <div class="textos-alerta">
+                    <div class="flex-content-chat">
+                        <i class="tiny material-icons itens grey-text">chat</i>
+                        <span class="subtitle-feed blue-text text-darken-2 itens">Mike Copeland</span>
+                        <small>wrote</small>
+                    </div>
+                    <div class="card-chat">
+                        <div class="flex-content">
+                            <div class="">
+                                <span class="subtitle-feed grey-text text-darken-1">10 Jan 2019 at</span>
+                                <span class="subtitle-feed grey-text text-darken-1">11:00 PM</span>
+                            </div>
+
+                            <a href="#">
+                                    <span class="subtitle-feed blue-text text-darken-2 flex-content-chat">Replay<i
+                                            class="tiny material-icons grey-text">arrow_forward</i></span>
+                            </a>
+                        </div>
+
+                        <div class="card-panel grey lighten-5 barra-progressao">
+
+                            <i class="tiny material-icons espaco-icone blue-text">pause_circle_filled</i>
+                            <span class="subtitle-feed grey-text text-darken-1 espaco-texto">02:09</span>
+
+                            <div class="progress-bar indigo lighten-5 right" style="width: 80%">
+                                <div class="indigo accent-3 determinate" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="chat">
+
+                        <div class="textos-alerta">
+                            <div class="flex-content-chat">
+                                <i class="tiny material-icons itens grey-text">chat</i>
+                                <span class="subtitle-feed blue-text text-darken-2 itens">Kate Rackham</span>
+                                <small>wrote</small>
+                            </div>
+                            <div class="card-chat">
+                                <div class="flex-content">
+                                    <div class="">
+                                        <span class="subtitle-feed grey-text text-darken-1">6 Jan 2019 at</span>
+                                        <span class="subtitle-feed grey-text text-darken-1">13:20 PM</span>
+                                    </div>
+
+                                    <a href="#">
+                                    <span class="subtitle-feed blue-text text-darken-2 flex-content-chat">Replay<i
+                                            class="tiny material-icons grey-text">arrow_forward</i></span>
+                                    </a>
+                                </div>
+                                <div class="card-panel grey lighten-5">
+                                    <span class="mensagem-feed grey-text text-darken-1">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="chat">
+
+                        <div class="textos-alerta">
+                            <div class="flex-content-chat">
+                                <i class="tiny material-icons itens">chat</i>
+                                <span class="subtitle-feed blue-text text-darken-2 itens">Mike Copeland</span>
+                                <small>wrote</small>
+                            </div>
+                            <div class="card-chat">
+                                <div class="flex-content">
+                                    <div class="">
+                                        <span class="subtitle-feed grey-text text-darken-1">2 Jan 2019 at</span>
+                                        <span class="subtitle-feed grey-text text-darken-1">10:00 AM</span>
+                                    </div>
+
+                                    <a href="#">
+                                    <span class="subtitle-feed blue-text text-darken-2 flex-content-chat">Replay<i
+                                            class="tiny material-icons grey-text">arrow_forward</i></span>
+                                    </a>
+                                </div>
+                                <div class="card-panel grey lighten-5">
+                                    <span class="mensagem-feed grey-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua.</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+        </aside>
     </div>
 </div>
 </body>
 
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="js/tabs.js"></script>
 <script src="js/sidemenu.js"></script>
+<script src="js/show-notification.js"></script>
 
 </html>
